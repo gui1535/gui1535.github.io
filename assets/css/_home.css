@@ -9,7 +9,7 @@
 /* ---- MAIN ---- */
 .main-principal {
     display: flex;
-    padding: 7.5em 15em;
+    padding: 7.5em 9em;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
