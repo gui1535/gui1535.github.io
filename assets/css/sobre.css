@@ -1,0 +1,44 @@
+.wrapper-sobre-mim {
+    height: 50vh;
+    padding: 2em 15em 0em 15em;
+    /* padding: 7.5em 15em; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper-sobre-mim div img {
+    width: 35em;
+}
+
+.sobre-mim {
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sobre {
+    font-weight: 600;
+    font-size: 1.9;
+    color: #4275FA;
+    line-height: 2.25em;
+    letter-spacing: 0.1em;
+}
+
+.sobre-titles h2 {
+    font-weight: 600;
+    font-size: 2.1em;
+    color: #2E2D56;
+    line-height: 60px;
+    letter-spacing: 0em;
+}
+
+.sobre-mim p {
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 27px;
+    color: #5F5E79;
+}

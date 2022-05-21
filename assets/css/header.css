@@ -1,0 +1,63 @@
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    transition: all 1.5s ease;
+}
+
+.fixed-white {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    border-radius: 5px;
+}
+
+.fixed-white .cabecalho p {
+    color: #4275FA;
+}
+
+.fixed-white .cabecalho nav ul li a {
+    color: #0E091B;
+}
+
+/* ---- CABEÇALHO ---- */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 9em;
+    align-items: center;
+}
+
+.cabecalho p {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 2.25em;
+}
+
+.cabecalho-lista {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.cabecalho-lista li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.cabecalho-lista li a {
+    padding-bottom: 0.3em;
+}
+
+.item-select {
+    border-bottom: 0.2em solid #fff;
+}
+
+.item-select-fixed {
+    border-bottom: 0.2em solid #0E091B;
+}
