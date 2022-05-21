@@ -5,14 +5,18 @@
 @import url(../css/_servicos.css);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-
 /* 
 font-family: 'Noto Sans', sans-serif;
 font-family: 'Pacifico', cursive;
 font-family: 'Poppins', sans-serif;
  */
+html,
 body {
     overflow-x: hidden;
+}
+
+body {
+
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -30,4 +34,25 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: #4275FA;
     border-radius: 8px;
+}
+
+@media (max-width: 1250px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 990px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #0E091B;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #4275FA;
+        border-radius: 0px;
+    }
 }
