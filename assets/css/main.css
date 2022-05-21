@@ -10,13 +10,10 @@ font-family: 'Noto Sans', sans-serif;
 font-family: 'Pacifico', cursive;
 font-family: 'Poppins', sans-serif;
  */
-html,
+
+
 body {
     overflow-x: hidden;
-}
-
-body {
-
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -37,6 +34,12 @@ body {
 }
 
 @media (max-width: 1250px) {
+
+    html,
+    body {
+        overflow-x: visible;
+    }
+
     body {
         overflow-x: hidden;
     }

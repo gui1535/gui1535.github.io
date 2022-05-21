@@ -12,7 +12,7 @@ nav {
 .fixed-white {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.9);
-    width: 100%;
+    width: 100vw;
     border-radius: 5px;
 }
 
