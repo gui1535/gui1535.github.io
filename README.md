@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  Portfólio criado com o intuito de mostrar meus projetos ao decorrer da minha carreira.
+  Meu portfólio criado com o objetivo de mostrar meus projetos e experiencia ao longo da minha carreira.
 </h4>
 
 ![Resultado do projeto](https://github.com/gui1535/gui1535.github.io/blob/master/Resultado%20Projeto.png)
