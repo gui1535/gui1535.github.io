@@ -1,6 +1,6 @@
 .wrapper-sobre-mim {
-    height: 50vh;
-    padding: 32px 144px 0px 144px;
+    height: 70vh;
+    padding: 0px 144px 0px 144px;
     /* padding: 7.5em 15em; */
     display: flex;
     flex-direction: row;
@@ -20,7 +20,7 @@
     justify-content: center;
 }
 
-#sobre {
+#sobre-mim {
     font-weight: 600;
     font-size: 20px;
     color: #4275FA;
@@ -55,7 +55,7 @@
         padding: 25px;
     }
 
-    #sobre {
+    #sobre-mim {
         font-size: 15px;
         line-height: 25px;
     }

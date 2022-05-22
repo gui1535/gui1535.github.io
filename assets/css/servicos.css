@@ -1,0 +1,149 @@
+.wrapper-servicos {
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 190px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper-servicos h2 {
+    font-weight: 600;
+    font-size: 33.5px;
+    color: #2E2D56;
+    line-height: 60px;
+}
+
+.wrapper-servicos p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5F5E79;
+}
+
+#servicos {
+    font-weight: 600;
+    font-size: 22px;
+    color: #4275FA;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+}
+
+/* Slider */
+.servicos {
+    flex-wrap: wrap;
+    display: flex;
+    row-gap: 40px;
+    column-gap: 80px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 144px 0px 144px;
+}
+
+
+.card-servicos {
+    height: 350px;
+    width: 380px;
+    border: 2px solid rgba(10, 10, 10, 0.1);
+    box-shadow: 1px 1px 21px 2px rgba(10, 10, 10, 0.1);
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servico-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 270px;
+    width: 380px;
+}
+
+.card-titles {
+    border-top: 1.5px solid rgba(10, 10, 10, 0.1);
+    width: 380px;
+    border-radius: 15px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-titles h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #5F5E79;
+}
+
+.card-titles p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #5F5E79;
+}
+
+@media (max-width: 1440px) {
+    .wrapper-servicos {
+        padding-top: 400px;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    #servicos {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .wrapper-servicos h2 {
+        font-size: 25px;
+    }
+
+    .card-titles h3 {
+        font-size: 25px;
+        color: #2E2D56;
+        line-height: 50px;
+    }
+
+    .card-titles h3 {
+        font-size: 23px;
+    }
+
+    .card-titles p {
+        font-size: 17px;
+    }
+
+    .servico-img img {
+        width: 290px;
+    }
+
+    .card-servicos {
+        height: 340px;
+    }
+
+    .servico-img {
+        height: 270px;
+        width: 380px;
+    }
+
+    .card-titles {
+        height: 70px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .wrapper-servicos {
+        display: flex;
+        height: 70vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 190px;
+        font-family: 'Poppins', sans-serif;
+    }
+}

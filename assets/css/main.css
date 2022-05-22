@@ -11,6 +11,9 @@ font-family: 'Pacifico', cursive;
 font-family: 'Poppins', sans-serif;
  */
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     overflow-x: hidden;
@@ -33,15 +36,23 @@ body {
     border-radius: 8px;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
 
     html,
     body {
         overflow-x: visible;
     }
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
 
-    body {
-        overflow-x: hidden;
+    ::-webkit-scrollbar-track {
+        background-color: #0E091B;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #4275FA;
+        border-radius: 0px;
     }
 }
 

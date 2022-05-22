@@ -58,12 +58,12 @@ nav {
     padding-bottom: 4.8px;
 }
 
-.item-select {
-    border-bottom: 3.2px solid #fff;
+.item-select-fixed {
+    border-bottom: 3.2 solid #0E091B !important;
 }
 
-.item-select-fixed {
-    border-bottom: 3.2 solid #0E091B;
+.item-select {
+    border-bottom: 3.2px solid #fff ;
 }
 
 
