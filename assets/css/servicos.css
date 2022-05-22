@@ -30,7 +30,6 @@
     letter-spacing: 1.5px;
 }
 
-/* Slider */
 .servicos {
     flex-wrap: wrap;
     display: flex;
@@ -87,7 +86,20 @@
     color: #5F5E79;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1780px) {
+    .wrapper-servicos {
+        padding-top: 300px;
+    }
+
+    .servicos {
+        overflow-x: visible;
+        flex-grow: 1;
+        row-gap: 40px;
+        column-gap: 70px;
+        padding: 32px 14px 0px 14px;
+    }
+}
+@media (max-width: 1320px) {
     .wrapper-servicos {
         padding-top: 400px;
     }
@@ -138,12 +150,48 @@
 
 @media (max-width: 1150px) {
     .wrapper-servicos {
-        display: flex;
-        height: 70vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 190px;
-        font-family: 'Poppins', sans-serif;
+        padding-top: 300px;
     }
+
+    .card-servicos {
+        height: 320px;
+        width: 350px;
+    }
+
+    .servicos {
+        padding: 32px 14px 0px 14px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .wrapper-servicos {
+        padding-top: 800px;
+    }
+
+    .card-servicos {
+        height: 320px;
+        width: 350px;
+    }
+
+    .servicos {
+        padding: 32px 14px 0px 14px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .servicos {
+        padding: 32px 4px 0px 4px;
+    }
+
+    .card-servicos {
+        height: 270px;
+        width: 320px;
+    }
+
+    .card-titles {
+        width: 320px;
+    }
+
 }

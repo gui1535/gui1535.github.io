@@ -13,6 +13,7 @@ font-family: 'Poppins', sans-serif;
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -36,12 +37,13 @@ body {
     border-radius: 8px;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1780px) {
 
     html,
     body {
         overflow-x: visible;
     }
+
     ::-webkit-scrollbar {
         width: 0px;
     }
@@ -53,6 +55,14 @@ body {
     ::-webkit-scrollbar-thumb {
         background-color: #4275FA;
         border-radius: 0px;
+    }
+}
+
+@media (max-width: 1350px) {
+
+    html,
+    body {
+        overflow-x: visible;
     }
 }
 
