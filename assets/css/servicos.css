@@ -99,6 +99,7 @@
         padding: 32px 14px 0px 14px;
     }
 }
+
 @media (max-width: 1320px) {
     .wrapper-servicos {
         padding-top: 400px;
@@ -114,12 +115,6 @@
 
     .wrapper-servicos h2 {
         font-size: 25px;
-    }
-
-    .card-titles h3 {
-        font-size: 25px;
-        color: #2E2D56;
-        line-height: 50px;
     }
 
     .card-titles h3 {
@@ -186,12 +181,21 @@
     }
 
     .card-servicos {
-        height: 270px;
+        height: 320px;
         width: 320px;
     }
 
     .card-titles {
         width: 320px;
     }
+
+    .card-titles h3 {
+        font-size: 20px;
+    }
+
+    .card-titles p {
+        font-size: 15px;
+    }
+
 
 }
