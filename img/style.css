@@ -103,6 +103,7 @@ nav ul li a:hover {
 /* ------------ MAIN ------------*/
 main {
     height: 100vh;
+    width: 1100px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -111,17 +112,11 @@ main {
 }
 
 .principal {
-    padding-top: 4%;
+    padding-top: 8%;
     width: 100%;
-    width: 1100px;
     display: flex;
     align-items: center;
-    padding-left: 1%;
-    padding-right: %;
     justify-content: space-between;
-}
-
-.principal-textos {
 }
 
 .principal-textos h1 {
@@ -133,7 +128,7 @@ main {
 
 .principal-textos h4 {
     color: #212529;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 500;
     padding-top: 20px;
@@ -141,34 +136,24 @@ main {
     text-transform: uppercase;
 }
 
-.principal-textos h4 span {
-    border-bottom: 2px solid #212529;
-}
-
 .principal-textos h3 {
     color: #212529;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 .principal-img {
-    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .principal-img img {
-    width: 30rem;
+    width: 520px;
     animation: img-main 16s ease 0s infinite normal forwards;
-}
-
-.principal-img img:hover {
-    transition: all 5s ease;
-    zoom: 1.006;
 }
 
 @keyframes img-main {
