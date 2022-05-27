@@ -20,7 +20,6 @@ a {
 
 html,
 body {
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -38,7 +37,7 @@ body {
     border-radius: 8px;
 }
 
-/* ------------ HEADER ------------*/
+/* --------------------------- HEADER --------------------------- */
 
 header {
     width: 100vw;
@@ -49,6 +48,18 @@ header {
     font-family: var(--font);
     display: flex;
     align-items: center;
+}
+
+.header-scroll {
+    width: 100vw;
+    height: 9vh;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    font-family: var(--font);
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
 }
 
 header h2 {
@@ -66,7 +77,7 @@ header h2 span {
 }
 
 .cabecalho {
-    width: 1100px;
+    width: 1300px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -98,30 +109,29 @@ nav ul li a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    opacity: 0.9;
 }
 
-/* ------------ MAIN ------------*/
+
+/* --------------------------- MAIN ---------------------------*/
 main {
-    height: 100vh;
-    margin: 0 auto;
+    height: 95vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font);
 }
 
-.principal {
+.principal-home {
     padding-top: 4%;
-    width: 100%;
-    width: 1100px;
+    width: 1300px;
     display: flex;
     align-items: center;
     padding-left: 1%;
     justify-content: space-between;
 }
 
-.principal-textos {
-}
 
 .principal-textos h1 {
     font-size: 4.3rem;
@@ -202,6 +212,12 @@ main {
 .principal-btn {
     display: flex;
     gap: 20px;
+    align-items: center;
+}
+
+.redes-s {
+    display: flex;
+    gap: 20px;
 }
 
 .principal-btn button {
@@ -213,29 +229,164 @@ main {
     text-transform: uppercase;
 }
 
-.btn-contato {
+.btn-curriculo {
     color: white;
     border: 2.5px solid var(--cor-1);
     cursor: pointer;
     background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
 }
 
-.btn-contato:hover {
+.btn-curriculo:hover {
     color: #000;
     border: 2.5px solid var(--cor-1);
     background: white;
     transition: all 1s ease;
 }
 
-.btn-curriculo {
-    background-color: white;
-    cursor: pointer;
-    border: 2.5px solid var(--cor-1);
+.principal-btn a img {
+    width: 100%;
 }
 
-.btn-curriculo:hover {
-    color: white;
-    border: 2.5px solid var(--cor-1);
-    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
-    transition: all 1s ease;
+.principal-btn a img:hover {
+    transition: all 0.2s ease;
+    opacity: 0.8;
+    background: var(--cor-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .principal-img {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    main {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .principal-home {
+        padding-top: 4%;
+        width: 100vw;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .principal-textos h1 {
+        text-align: center;
+        font-size: 3.7rem;
+    }
+
+    .principal-textos h4 {
+        color: #212529;
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 20px;
+        text-transform: none;
+    }
+
+    .principal-textos h3 {
+        text-align: center;
+    }
+
+    .principal-btn {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h2 {
+        padding-left: 4%;
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--cor-title);
+    }
+
+    header h2 span {
+        font-size: 1.3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--cor-1);
+    }
+
+}
+
+/* --------------------------- SOBRE MIM ---------------------------*/
+#sobre-mim {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+}
+
+.principal-sobre {
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+}
+
+.principal-sobre article h2 {
+    font-weight: 800;
+    padding-bottom: 40px;
+    font-size: 2.5rem;
+    background: var(--cor-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.principal-sobre article p {
+    color: #212529;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .principal-sobre {
+        width: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30%;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    #sobre-mim {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+    }
+
+    .principal-sobre img {
+        width: 350px;
+    }
+
+    .principal-sobre article h2 {
+        text-align: center;
+    }
+
+    .principal-sobre article p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
 }

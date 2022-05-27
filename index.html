@@ -15,34 +15,53 @@
 <body>
     <header>
         <div class="cabecalho">
-            <h2><span><</span>Guilherme<span>/></span></h2>
+            <h2><span>&lt;</span>Guilherme<span>/></span></h2>
             <nav>
                 <ul>
-                    <li><a class="ativo" href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
+                    <li><a class="ativo" href="#home">Home</a></li>
+                    <li><a href="#sobre-mim">Sobre</a></li>
                     <li><a href="">Serviços</a></li>
-                    <li><a href="">Portifolio</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="">Projetos</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a class="nav-contato" href="">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
-        <div class="principal">
+    <main id="home">
+        <div class="principal-home">
             <div class="principal-textos">
                 <h3>Olá, eu sou</h3>
                 <h1>Guilherme</h1>
-                <h4><span>Web</span> Developer</h4>
+                <h4>Front-end e Back-end Developer</h4>
                 <div class="principal-btn">
-                    <button class="btn-contato">Contato</button>
                     <button class="btn-curriculo">Curriculo</button>
+                    <div class="redes-s">
+                        <a href=""><img src="./img/icons/github.svg" alt=""></a>
+                        <a href=""><img src="./img/icons/linkedin.svg" alt=""></a>
+                        <a href=""><img src="./img/icons/codepen.svg" alt=""></a>
+                    </div>
+
                 </div>
             </div>
             <div class="principal-img">
-                <img src="./img/Illustration (4).svg" alt="">
+                <img src="./img/img-main.png" alt="">
             </div>
         </div>
     </main>
+    <section id="sobre-mim">
+        <div class="principal-sobre">
+            <img src="./img/img-sobremim.svg" alt="">
+            <article>
+                <h2>Sobre mim</h2>
+                <p>
+                    Meu nome é Guilherme Araujo. Sou freelancer como Front-end e Back-end
+                    developer. Desenvolvo websites e sistemas moderno sempre visando a qualidade,
+                    performance e experiencia do usuario.
+                </p>
+            </article>
+        </div>
+    </section>
 </body>
 
 </html>
