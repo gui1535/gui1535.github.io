@@ -1,0 +1,97 @@
+@media screen and (max-width: 1000px) {
+
+    .principal-img {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    main {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .principal-home {
+        padding-top: 4%;
+        width: 100vw;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .principal-textos h1 {
+        text-align: center;
+        font-size: 3.7rem;
+    }
+
+    .principal-textos h4 {
+        color: #212529;
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 20px;
+        text-transform: none;
+    }
+
+    .principal-textos h3 {
+        text-align: center;
+    }
+
+    .principal-btn {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h2 {
+        padding-left: 4%;
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--cor-title);
+    }
+
+    header h2 span {
+        font-size: 1.3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--cor-1);
+    }
+
+    .principal-sobre {
+        width: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30%;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    #sobre-mim {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+    }
+
+    .principal-sobre img {
+        width: 350px;
+    }
+
+    .principal-sobre article h2 {
+        text-align: center;
+    }
+
+    .principal-sobre article p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
