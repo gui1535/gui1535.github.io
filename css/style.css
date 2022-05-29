@@ -530,14 +530,29 @@ main {
     display: none;
 }
 
-.projeto-hover p {
+.projeto-hover h6 {
     font-weight: 500;
     font-size: 1.4rem;
     color: white;
-    margin-bottom: 15px;
     padding: 10px;
 }
 
+.projeto-hover h5 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    padding-top: 30px;
+}
+
+.projeto-hover p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding-top: 5px;
+    color: white;
+}
+.projeto-hover-icons{
+    padding-top: 20px;
+}
 .projeto-hover a i {
     width: 30px;
     text-align: center;
@@ -552,6 +567,7 @@ main {
     border-radius: 8px;
 }
 
+
 .card-projeto:hover .projeto-hover {
     display: block;
     font-size: 18px;
@@ -559,11 +575,10 @@ main {
     border-radius: 16px;
     width: 300px;
     height: 220px;
-    background: rgba(48, 87, 212, 0.5);
+    background: rgba(48, 87, 212, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 996;
     position: absolute;
 }
