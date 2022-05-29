@@ -23,7 +23,6 @@ body {
     scroll-behavior: smooth;
 }
 
-
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -261,9 +260,9 @@ main {
         display: none;
     }
 
-    nav ul {
+    /* nav ul {
         display: none;
-    }
+    } */
 
     main {
         height: 100vh;
@@ -324,7 +323,7 @@ main {
 
 /* --------------------------- SOBRE MIM ---------------------------*/
 #sobre-mim {
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -361,9 +360,9 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 30%;
+        padding-top: 30px;
         justify-content: center;
-        gap: 60px;
+        gap: 15px;
     }
 
     #sobre-mim {
@@ -381,6 +380,7 @@ main {
 
     .principal-sobre article h2 {
         text-align: center;
+        padding-top: 30px;
     }
 
     .principal-sobre article p {
@@ -392,7 +392,7 @@ main {
 
 /* --------------------------- SERVIÇOS ---------------------------*/
 #servicos {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -402,7 +402,9 @@ main {
 
 .principal-servicos {
     width: 1300px;
+    height: 100%;
     display: flex;
+    padding-bottom: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -415,54 +417,97 @@ main {
     color: var(--cor-1);
 }
 
-.caixa-servicos {
+.card_imagem-servico img {
+    height: 240px;
     width: 100%;
+    vertical-align: middle;
+}
+
+.btn-card-servico {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+.btn-card-servico:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards-servicos {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    column-gap: 5vw;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card_item_servico {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .card_item_servico {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .card_item_servico {
+        width: 33.3333%;
+    }
 }
 
 .card-servico {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    height: 340px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: var(--box-shadow);
-    padding: 10px 15px;
-    width: 315px;
-    height: 290px;
+    overflow: hidden;
+}
+
+.card_conteudo-servico {
+    height: 100px;
+    padding: 10px 12px;
+}
+
+.card_titulo-servico {
     text-align: center;
-}
-
-.card-servico img {
-    width: 90%;
-}
-
-.card-servico h4 {
-    font-weight: 500;
-    padding-top: 10px;
-    font-size: 1.4rem;
     color: var(--cor-2);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 5px;
 }
-
-.card-servico p {
+.card_texto-servico {
+    color: #000;
+    font-size: 0.9rem;
+    line-height: 1.5;
     font-weight: 400;
-    padding-top: 10px;
-    font-size: 1rem;
 }
 
 /* --------------------------- PROJETOS ---------------------------*/
+
 #projetos {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: yellow;
     justify-content: center;
     font-family: var(--font);
 }
+
 
 .principal-projetos {
     width: 1300px;
@@ -475,27 +520,7 @@ main {
 
 .principal-projetos h2 {
     font-weight: 800;
-    padding-bottom: 40px;
     font-size: 2.5rem;
-    color: var(--cor-1);
-}
-
-.filtro-projeto ul {
-    display: flex;
-    gap: 30px;
-    text-transform: uppercase;
-}
-
-.filtro-projeto ul li {
-    cursor: pointer;
-    list-style: none;
-}
-
-.filtro-projeto ul li.filtro-ativo {
-    color: var(--cor-2);
-}
-
-.filtro-projeto ul li:hover {
     color: var(--cor-1);
 }
 
@@ -550,9 +575,11 @@ main {
     padding-top: 5px;
     color: white;
 }
-.projeto-hover-icons{
+
+.projeto-hover-icons {
     padding-top: 20px;
 }
+
 .projeto-hover a i {
     width: 30px;
     text-align: center;
