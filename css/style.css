@@ -402,7 +402,6 @@ main {
     height: 100%;
     width: 100%;
     padding-top: 12%;
-    margin-bottom: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -518,6 +517,7 @@ main {
 #projetos {
     height: 100%;
     width: 100%;
+    padding-top: 12%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -796,7 +796,7 @@ main {
     height: 100%;
     width: 100%;
     display: flex;
-    padding-top: 10%;
+    padding-top: 12%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
