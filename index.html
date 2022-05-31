@@ -2,330 +2,240 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-    <title>Portifolio | Guilherme</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>Portfólio | Guilherme</title>
 </head>
 
 <body>
-    <header>
-        <div class="cabecalho">
-            <h2><span>&lt;</span>Guilherme<span>/></span></h2>
-            <nav>
-                <ul>
-                    <li><a class="ativo" href="#home">Home</a></li>
-                    <li><a href="#sobre-mim">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a class="nav-contato" href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main id="home">
-        <div class="principal-home">
-            <div class="principal-textos">
-                <h3>Olá, eu sou</h3>
-                <h1>Guilherme</h1>
-                <h4>Front-end e Back-end Developer</h4>
-                <div class="principal-btn">
-                    <button class="btn-curriculo">Curriculo</button>
-                    <div class="redes-s">
-                        <a href=""><img src="./img/icons/github.svg" alt=""></a>
-                        <a href=""><img src="./img/icons/linkedin.svg" alt=""></a>
-                        <a href=""><img src="./img/icons/codepen.svg" alt=""></a>
-                    </div>
 
-                </div>
-            </div>
-            <div class="principal-img">
-                <img src="./img/img-main.png" alt="">
-            </div>
-        </div>
-    </main>
-    <section id="sobre-mim">
-        <div class="principal-sobre">
-            <img src="./img/img-sobremim.svg" alt="">
-            <article>
-                <h2>Sobre mim</h2>
-                <p>
-                    Meu nome é Guilherme Araujo. Sou freelancer como Front-end e Back-end
-                    developer. Desenvolvo websites e sistemas moderno sempre visando a qualidade,
-                    performance e experiencia do usuario.
-                </p>
-            </article>
-        </div>
+  <header class="header">
+    <nav class="nav grid-padrao">
+      <div>
+        <a href="#" class="nav_logo">
+          <span>&lt;</span>Guilherme<span>/></span></a>
+      </div>
+
+      <div class="nav_menu" id="nav_menu">
+        <ul class="nav_list">
+          <li class="nav_items">
+            <a href="#home" class="nav_link ativo">Home</a>
+          </li>
+          <li class="nav_items">
+            <a href="#sobre" class="nav_link ativo">Sobre</a>
+          </li>
+          <li class="nav_items">
+            <a href="#skills" class="nav_link ativo">Skills</a>
+          </li>
+          <li class="nav_items">
+            <a href="#servicos" class="nav_link ativo">Serviços</a>
+          </li>
+          <li class="nav_items">
+            <a href="#projetos" class="nav_link ativo">Projetos</a>
+          </li>
+          <li class="nav_items">
+            <a href="#contato" class="nav_link ativo">Contato</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav_mobile" id="nav_mobile">
+        <i class="bx bx-menu-alt-right"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="home grid-padrao" id="home">
+      <div class="home_informacoes">
+        <h1 class="home_titulo">
+          <p>Olá, eu sou</p>
+          <span class="home_titulo-cor">Guilherme Araujo</span>
+          <br />
+          <p id="home_minha_profissao">Developer</p>
+        </h1>
+        <a href="#contato" class="button">Curriculo</a>
+      </div>
+
+      <div class="home_rede_social">
+        <a href="https://github.com/gui1535" class="home_rede_social-icon">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/guilhermearaujo1/" class="home_rede_social-icon">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="https://codepen.io/gui1535" class="home_rede_social-icon">
+          <i class='bx bxl-codepen'></i>
+        </a>
+        <a href="mailto:guilherme.araujo1535@gmail.com" class="home_rede_social-icon">
+          <i class='bx bx-envelope'></i>
+        </a>
+      </div>
+
+      <div class="home_img" data-aos-delay="500">
+        <img src="img/img-main.png">
+      </div>
     </section>
-    <section id="servicos">
-        <div class="principal-servicos">
-            <h2>Serviços</h2>
+    <section class="sobre section" id="sobre">
+      <h2 class="titulo-secao">Sobre</h2>
+
+      <div class="sobre_container grid-padrao">
+        <div class="sobre_img">
+          <img src="img/img-sobremim.svg" alt="">
+        </div>
+
+        <div>
+          <h2 class="sobre_subtitulo">
+            Quem sou
+          </h2>
+          <p class="sobre_texto">
+            Meu nome é Guilherme Araujo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia illum est
+            voluptate adipisci voluptatibus reiciendis? Quibusdam numquam doloribus fuga?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="skills section" id="skills">
+      <h2 class="titulo-secao">Skills</h2>
+
+      <div class="skills_container grid-padrao">
+        <div>
+          <h2 class="skills_subtitulo">
+            Algumas habilidades
+          </h2>
+          <p class="skills_texto">
+            Algum texto, algum texto e algum texto
+          </p>
+          <div class="skills_informacao">
+
+            <div class="skills_nome">
+              <i class="bx bxl-html5 skill_icone"></i>
+              <span class="skill_nome">HTML5</span>
+            </div>
             <div>
-                <ul class="cards-servicos">
-                    <li class="card_item_servico">
-                        <div class="card-servico">
-                            <div class="card_imagem-servico">
-                                <img src="./img/undraw_Wireframing_re_q6k6 1.svg">
-                            </div>
-                            <div class="card_conteudo-servico">
-                                <h5 class="card_titulo-servico">Desenvolvimento de sites</h5>
-                                <p class="card_texto-servico">
-                                    Demo of pixel perfect pure CSS simple responsive card grid layout
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card_item_servico">
-                        <div class="card-servico">
-                            <div class="card_imagem-servico">
-                                <img src="./img/undraw_Wireframing_re_q6k6 1.svg">
-                            </div>
-                            <div class="card_conteudo-servico">
-                                <h5 class="card_titulo-servico">Desenvolvimento de software</h5>
-                                <p class="card_texto-servico">
-                                    Demo of pixel perfect pure CSS simple responsive card grid layout
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card_item_servico">
-                        <div class="card-servico">
-                            <div class="card_imagem-servico">
-                                <img src="./img/undraw_Wireframing_re_q6k6 1.svg">
-                            </div>
-                            <div class="card_conteudo-servico">
-                                <h5 class="card_titulo-servico">Infraestrutura de redes</h5>
-                                <p class="card_texto-servico">
-                                    Demo of pixel perfect pure CSS simple responsive card grid layout
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+              <span class="skill_porcentagem">5%</span>
             </div>
 
-        </div>
-    </section>
-    <section id="projetos">
-        <div class="principal-projetos">
-            <h2>Projetos Recentes</h2>
-            <div class="projetos-container">
-                <span class="hr-role"></span>
-                <div class="portfolio-tab">
-                    <ul id="filters" class="clearfix">
-                        <li class="filter active" data-filter=".htmlcss, .webdesign, .csharp, .php">Todos</li>
-                        <li class="filter" data-filter=".htmlcss">HTML/CSS</li>
-                        <li class="filter" data-filter=".javascript">JavaScript</li>
-                        <li class="filter" data-filter=".webdesign">Web webdesign</li>
-                        <li class="filter" data-filter=".csharp">C#</li>
-                        <li class="filter" data-filter=".php">PHP</li>
-                    </ul>
-                </div>
-                <div class="portfolio-grid">
-                    <div class="portfolio htmlcss" data-cat="htmlcss">
-                        <div class="portfolio-wrapper first">
-                            <div class="portfolio-bg"></div>
-                            <div class="label">
-                                <div class="label-text">
-                                    <h6>Project Name</h6>
-                                    <span class="text-category">htmlcss</span>
-                                    <div class="icons">
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-code"></i>
-                                        </a>
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-globe"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="label-bg"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio javascript" data-cat="htmlcss">
-                        <div class="portfolio-wrapper first">
-                            <div class="portfolio-bg"></div>
-                            <div class="label">
-                                <div class="label-text">
-                                    <h6>Project Name</h6>
-                                    <span class="text-category">htmlcss</span>
-                                    <div class="icons">
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-code"></i>
-                                        </a>
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-globe"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="label-bg"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio htmlcss" data-cat="htmlcss">
-                        <div class="portfolio-wrapper first">
-                            <div class="portfolio-bg"></div>
-                            <div class="label">
-                                <div class="label-text">
-                                    <h6>Project Name</h6>
-                                    <span class="text-category">htmlcss</span>
-                                    <div class="icons">
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-code"></i>
-                                        </a>
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-globe"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="label-bg"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio csharp" data-cat="htmlcss">
-                        <div class="portfolio-wrapper first">
-                            <div class="portfolio-bg"></div>
-                            <div class="label">
-                                <div class="label-text">
-                                    <h6>Project Name</h6>
-                                    <span class="text-category">htmlcss</span>
-                                    <div class="icons">
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-code"></i>
-                                        </a>
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-globe"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="label-bg"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio php" data-cat="htmlcss">
-                        <div class="portfolio-wrapper first">
-                            <div class="portfolio-bg"></div>
-                            <div class="label">
-                                <div class="label-text">
-                                    <h6>Project Name</h6>
-                                    <span class="text-category">htmlcss</span>
-                                    <div class="icons">
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-code"></i>
-                                        </a>
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-globe"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="label-bg"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio php" data-cat="htmlcss">
-                        <div class="portfolio-wrapper first">
-                            <div class="portfolio-bg"></div>
-                            <div class="label">
-                                <div class="label-text">
-                                    <h6>Project Name</h6>
-                                    <span class="text-category">htmlcss</span>
-                                    <div class="icons">
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-code"></i>
-                                        </a>
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-globe"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="label-bg"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio csharp" data-cat="htmlcss">
-                        <div class="portfolio-wrapper first">
-                            <div class="portfolio-bg"></div>
-                            <div class="label">
-                                <div class="label-text">
-                                    <h6>Project Name</h6>
-                                    <span class="text-category">htmlcss</span>
-                                    <div class="icons">
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-code"></i>
-                                        </a>
-                                        <a href="#" class="template-btn" target="_blank">
-                                            <i class="fa-solid fa-globe"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="label-bg"> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="linguagem">
-            <h5>Linguagens</h5>
-            <div class="container-skills-language">
-                <div class="cardItem">
-                    <i class="icone-card devicon-html5-plain"></i>
-                    <span class="cardLabel">HTML5</span>
-                </div>
-                <div class="cardItem">
-                    <i class="icone-card devicon-css3-plain"></i>
-                    <span class="cardLabel">CSS3</span>
-                </div>
-                <div class="cardItem">
-                    <i class="icone-card devicon-javascript-plain"></i>
-                    <span class="cardLabel">JavaScript</span>
-                </div>
-                <div class="cardItem">
-                    <i class="icone-card devicon-php-plain"></i>
-                    <span class="cardLabel">PHP</span>
-                </div>
-                <div class="cardItem">
-                    <i class="icone-card devicon-csharp-plain-wordmark"></i>
-                    <span class="cardLabel">C#</span>
-                </div>
-            </div>
-        </div>
-        <div class="outros-conhecimentos">
-            <h5>Outros conhecimentos</h5>
-            <div class="container-skills-language">
-                <div class="cardItem">
-                    <i class="icone-card devicon-bootstrap-plain"></i>
-                    <span class="cardLabel">Bootstrap</span>
-                </div>
-                <div class="cardItem">
-                    <i class="icone-card devicon-figma-plain"></i>
-                    <span class="cardLabel">Figma</span>
-                </div>
-                <div class="cardItem">
-                    <i class="icone-card devicon-mysql-plain"></i>
-                    <span class="cardLabel">MySQL</span>
-                </div>
+            <div class="skill_cobrinha skill_html"></div>
+          </div>
 
-                <div class="cardItem">
-                    <i class="icone-card devicon-wordpress-plain"></i>
-                    <span class="cardLabel">Wordpress</span>
-                </div>
+          <div class="skills_informacao">
+            <div class="skills_nome">
+              <i class="bx bxl-css3 skill_icone"></i>
+              <span class="skill_nome">CSS3</span>
             </div>
+
+            <div>
+              <span class="skill_porcentagem">5%</span>
+            </div>
+
+            <div class="skill_cobrinha skill_css"></div>
+          </div>
+
+          <div class="skills_informacao">
+            <div class="skills_nome">
+              <i class="bx bxl-javascript skill_icone"></i>
+              <span class="skill_nome">JS</span>
+            </div>
+
+            <div>
+              <span class="skill_porcentagem">5%</span>
+            </div>
+
+            <div class="skill_cobrinha skill_js"></div>
+          </div>
+
+          <div class="skills_informacao">
+            <div class="skills_nome">
+              <i class="bx bxl-php skill_icone"></i>
+              <span class="skill_nome">PHP</span>
+            </div>
+
+            <div><span class="skill_porcentagem">5%</span></div>
+
+            <div class="skill_cobrinha skill_ui"></div>
+          </div>
         </div>
 
+        <div>
+          <img src="img/img-sobremim.svg">
+        </div>
+      </div>
     </section>
-    <!-- SCRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
-    <script src="./js/main.js"></script>
+
+    <section class="projetos section" id="projetos">
+      <h2 class="titulo-secao">Projetos</h2>
+
+      <div class="projeto_container grid-padrao">
+        <div class="projetos_img">
+          <img src="img/work.svg" alt="" />
+        </div>
+
+        <div class="projetos_img">
+          <img src="img/work.svg" alt="" />
+        </div>
+
+        <div class="projetos_img">
+          <img src="img/work.svg" alt="" />
+        </div>
+
+        <div class="projetos_img">
+          <img src="img/work.svg" alt="" />
+        </div>
+
+        <div class="projetos_img">
+          <img src="img/work.svg" alt="" />
+        </div>
+
+        <div class="projetos_img">
+          <img src="img/work.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="contato section" id="contato">
+      <h2 class="titulo-secao">Contato</h2>
+
+      <div class="contato_container grid-padrao">
+        <form action="#" class="contato_form">
+          <input type="text" placeholder="Seu nome" class="controle_entrada" />
+          <input type="mail" placeholder="Seu email" class="controle_entrada" />
+          <textarea name="" id="" cols="0" placeholder="Sua mensagem" rows="10" class="controle_entrada"></textarea>
+
+          <input type="button" value="Enviar" class="control_button button" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p class="footer_title"><span>&lt;</span>Guilherme<span>/></span></p>
+
+      <div class="footer_socials">
+        <a href="https://github.com/gui1535" class="footer_icone">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/guilhermearaujo1/" class="footer_icone">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="https://codepen.io/gui1535" class="footer_icone">
+          <i class='bx bxl-codepen'></i>
+        </a>
+        <a href="mailto:guilherme.araujo1535@gmail.com" class="footer_icone">
+          <i class='bx bx-envelope'></i>
+        </a>
+      </div>
+      <p>
+        &#169; 2022 copyright all right reserved
+      </p>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
