@@ -337,19 +337,23 @@ img {
 }
 
 .skill_html {
-  width: 5%;
+  width: 65%;
 }
 
 .skill_css {
-  width: 5%;
+  width: 48%;
 }
 
 .skill_js {
-  width: 5%;
+  width: 25%;
 }
 
-.skill_ui {
-  width: 8%;
+.skill_csharp {
+  width: 60%;
+}
+
+.skill_php {
+  width: 20%;
 }
 
 /* PROJEtoS */

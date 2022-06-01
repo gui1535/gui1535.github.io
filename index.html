@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <title>Portfólio | Guilherme</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <title>Portifólio | Guilherme</title>
 </head>
 
 <body>
@@ -58,7 +59,8 @@
           <br />
           <p id="home_minha_profissao">Developer</p>
         </h1>
-        <a href="#contato" class="button">Curriculo</a>
+        <a style="cursor: pointer;" href="./doc/curriculo.pdf" download="curriculo" class="button"
+          id="mensagem-sucesso-curriculo">Curriculo</a>
       </div>
 
       <div class="home_rede_social">
@@ -117,7 +119,7 @@
               <span class="skill_nome">HTML5</span>
             </div>
             <div>
-              <span class="skill_porcentagem">5%</span>
+              <span class="skill_porcentagem">65%</span>
             </div>
 
             <div class="skill_cobrinha skill_html"></div>
@@ -130,12 +132,23 @@
             </div>
 
             <div>
-              <span class="skill_porcentagem">5%</span>
+              <span class="skill_porcentagem">48%</span>
             </div>
 
             <div class="skill_cobrinha skill_css"></div>
           </div>
+          <div class="skills_informacao">
+            <div class="skills_nome">
+              <i class="devicon-csharp-plain skill_icone"></i>
+              <span class="skill_nome">C#</span>
+            </div>
 
+            <div>
+              <span class="skill_porcentagem">60%</span>
+            </div>
+
+            <div class="skill_cobrinha skill_csharp"></div>
+          </div>
           <div class="skills_informacao">
             <div class="skills_nome">
               <i class="bx bxl-javascript skill_icone"></i>
@@ -143,7 +156,7 @@
             </div>
 
             <div>
-              <span class="skill_porcentagem">5%</span>
+              <span class="skill_porcentagem">25%</span>
             </div>
 
             <div class="skill_cobrinha skill_js"></div>
@@ -155,9 +168,9 @@
               <span class="skill_nome">PHP</span>
             </div>
 
-            <div><span class="skill_porcentagem">5%</span></div>
+            <div><span class="skill_porcentagem">20%</span></div>
 
-            <div class="skill_cobrinha skill_ui"></div>
+            <div class="skill_cobrinha skill_php"></div>
           </div>
         </div>
 
@@ -201,17 +214,17 @@
       <h2 class="titulo-secao">Contato</h2>
 
       <div class="contato_container grid-padrao">
-        <form action="#" class="contato_form">
-          <input type="text" placeholder="Seu nome" class="controle_entrada" />
-          <input type="mail" placeholder="Seu email" class="controle_entrada" />
+        <form action="https://formsubmit.co/guilherme.araujo1535@gmail.com" method="post" class="contato_form">
+          <input type="text" name="name" placeholder="Seu nome" class="controle_entrada" required />
+          <input type="email" name="email" placeholder="Seu email" class="controle_entrada" required />
           <textarea name="" id="" cols="0" placeholder="Sua mensagem" rows="10" class="controle_entrada"></textarea>
 
-          <input type="button" value="Enviar" class="control_button button" />
+          <button type="submit" value="Enviar" class="control_button button">Enviar</button>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/#contato">
         </form>
       </div>
     </section>
 
-    <!-- Footer Section -->
     <footer class="footer">
       <p class="footer_title"><span>&lt;</span>Guilherme<span>/></span></p>
 
@@ -234,8 +247,9 @@
       </p>
     </footer>
   </main>
-
+  <script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
   <script src="js/main.js"></script>
+  <script src="./js/notificacao.js"></script>
 </body>
 
 </html>
