@@ -179,32 +179,56 @@
         </div>
       </div>
     </section>
+    <section class="servicos section" id="servicos">
+      <h2 class="titulo-secao">Serviços</h2>
+      <div class="servico_container grid-padrao">
+        <div class="servico_img">
+          <img src="img/criacao-de-site.png" alt="" />
+          <h3>Desenvolvimento Web</h3>
+        </div>
 
+        <div class="servico_img">
+          <img src="img/desenvolvimento-de-software.png" alt="" />
+          <h3>Desenvolvimento de Software</h3>
+        </div>
+
+        <div class="servico_img">
+          <img src="img/WebDesign-elements-f5.jpg" alt="" />
+          <h3>WebDesign</h3>
+        </div>
+      </div>
+    </section>
     <section class="projetos section" id="projetos">
       <h2 class="titulo-secao">Projetos</h2>
-
+      <div class="group_projetos">
+        <button type="button" data-view="all">Todos</button>
+        <button type="button" data-view="html">HTML / CSS</button>
+        <button type="button" data-view="php">PHP</button>
+        <button type="button" data-view="javascript">JavaScript</button>
+        <button type="button" data-view="csharp">C#</button>
+      </div>
       <div class="projeto_container grid-padrao">
-        <div class="projetos_img">
+        <div class="projetos_img item html">
           <img src="img/work.svg" alt="" />
         </div>
 
-        <div class="projetos_img">
+        <div class="projetos_img item html">
           <img src="img/work.svg" alt="" />
         </div>
 
-        <div class="projetos_img">
+        <div class="projetos_img item html">
           <img src="img/work.svg" alt="" />
         </div>
 
-        <div class="projetos_img">
+        <div class="projetos_img item html">
           <img src="img/work.svg" alt="" />
         </div>
 
-        <div class="projetos_img">
+        <div class="projetos_img item php">
           <img src="img/work.svg" alt="" />
         </div>
 
-        <div class="projetos_img">
+        <div class="projetos_img item php">
           <img src="img/work.svg" alt="" />
         </div>
       </div>
@@ -250,6 +274,22 @@
   <script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
   <script src="js/main.js"></script>
   <script src="./js/notificacao.js"></script>
+
+  <script>
+    let boxs = document.querySelectorAll(".item");
+    document.querySelector(".group_projetos").addEventListener("click", function (event) {
+      if (event.target.tagName != "BUTTON") return false;
+
+      let target = event.target.dataset["view"];
+
+      boxs.forEach(function (el) {
+        el.classList.remove("hide");
+        if (!el.classList.contains(target) && target != "all") {
+          el.classList.add("hide");
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
