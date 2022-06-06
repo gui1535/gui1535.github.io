@@ -374,16 +374,21 @@ img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
 }
 
 .projetos_img img {
   transition: 1s;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 }
 
 .group_projetos {
   font-family: var(--body-font);
-
   text-align: center;
   padding: 10px 0px;
 }
@@ -407,13 +412,10 @@ img {
   background-color: var(--primeira-cor);
 }
 
-.group_projetos button a:active {
-  background-color: red;
-}
-
 .item {
   page-break-inside: avoid;
   break-inside: avoid;
+  border-radius: 16px;
   transition: all 42s ease;
 }
 
@@ -424,10 +426,6 @@ img {
   overflow: hidden;
   width: 0;
   height: 0;
-}
-
-.projetos_img img:hover {
-  transform: scale(1.1);
 }
 
 .servico_img {
@@ -592,6 +590,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
+    row-gap: 1rem;
   }
 
   .servico_container {
