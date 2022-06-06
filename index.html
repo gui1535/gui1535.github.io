@@ -201,11 +201,11 @@
     <section class="projetos section" id="projetos">
       <h2 class="titulo-secao">Projetos</h2>
       <div class="group_projetos">
-        <button type="button" data-view="all">Todos</button>
-        <button type="button" data-view="html">HTML / CSS</button>
-        <button type="button" data-view="php">PHP</button>
-        <button type="button" data-view="javascript">JavaScript</button>
-        <button type="button" data-view="csharp">C#</button>
+        <a type="button" data-view="all">Todos</a>
+        <a type="button" data-view="html">HTML / CSS</a>
+        <a type="button" data-view="php">PHP</button>
+        <a type="button" data-view="javascript">JavaScript</a>
+        <a type="button" data-view="csharp">C#</a>
       </div>
       <div class="projeto_container grid-padrao">
         <div class="projetos_img item html">
@@ -283,7 +283,7 @@
   <script>
     let boxs = document.querySelectorAll(".item");
     document.querySelector(".group_projetos").addEventListener("click", function (event) {
-      if (event.target.tagName != "BUTTON") return false;
+      if (event.target.tagName != "A") return false;
 
       let target = event.target.dataset["view"];
 

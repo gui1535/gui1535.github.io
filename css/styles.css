@@ -390,10 +390,11 @@ img {
 .group_projetos {
   font-family: var(--body-font);
   text-align: center;
-  padding: 10px 0px;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
-.group_projetos button {
+.group_projetos a {
   padding: 10px;
   font-weight: 500;
   font-size: var(--tamanho-normal);
@@ -406,7 +407,7 @@ img {
   background-color: rgba(68, 88, 220, 0.1);
 }
 
-.group_projetos button:hover {
+.group_projetos a:hover {
   transition: 0.5s;
   color: white;
   background-color: var(--primeira-cor);
