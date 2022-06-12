@@ -182,27 +182,41 @@
     </section>
     <section class="servicos section" id="servicos">
       <h2 class="titulo-secao">Alguns Serviços</h2>
-      <div class="servico_container grid-padrao">
-        <div class="card_servico">
-          <img src="./img/criacao-de-site.png">
-          <h4>WebSites</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias facere.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="card_servico">
-          <img src="./img/criacao-de-site.png">
-          <h4>E-commerce</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias facere.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="card_servico">
-          <img src="./img/criacao-de-site.png">
-          <h3>Softwares</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias facere.</p>
-          <a href="#">Learn more</a>
-        </div>
+      <div class="servico_container grid-padrao cards_servico">
+        <li class="cards_item_servico">
+          <div class="card_servico">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+            <div class="card_conteudo">
+              <h2 class="card_titulo">WebSites</h2>
+              <p class="card_texto">Sites mordernos para empresas que querem se destacar no mercado.</p>
+              <button class="btn card_btn">SAIBA MAIS</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item_servico">
+          <div class="card_servico">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+            <div class="card_conteudo">
+              <h2 class="card_titulo">E-commerce</h2>
+              <p class="card_texto">Um e-commerce para alavancar suas vendas online.</p>
+              <button class="btn card_btn">SAIBA MAIS</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item_servico">
+          <div class="card_servico">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+            <div class="card_conteudo">
+              <h2 class="card_titulo">Softwares</h2>
+              <p class="card_texto">Sistemas modernos para automatizar processos do dia a dia das empresas.</p>
+              <button class="btn card_btn">SAIBA MAIS</button>
+            </div>
+          </div>
+        </li>
+        </ul>
       </div>
     </section>
+    <!-- --------------------------------------- -->
     <section class="projetos section" id="projetos">
       <h2 class="titulo-secao">Projetos</h2>
       <div class="group_projetos">
@@ -213,7 +227,7 @@
           <a type="button" data-view="csharp">C#</a>
       </div>
       <div class="projeto_container grid-padrao">
-        <!--  -->
+        <!-- --------------------------------------- -->
         <div class="card item html-css">
           <div class="card-thumb">
             <a href="#"><img
@@ -233,13 +247,8 @@
               consectetur, adipisicing elit.
             </p>
           </div>
-          <div class="card-footer">
-            <div class="card-time">
-              <i class="material-icons">alarm</i><span>30 min</span>
-            </div>
-          </div>
         </div>
-        <!--  -->
+        <!-- --------------------------------------- -->
         <div class="card item html">
           <div class="card-thumb">
             <a href="#"><img
@@ -259,13 +268,9 @@
               consectetur, adipisicing elit.
             </p>
           </div>
-          <div class="card-footer">
-            <div class="card-time">
-              <i class="material-icons">alarm</i><span>30 min</span>
-            </div>
-          </div>
+
         </div>
-        <!--  -->
+        <!-- --------------------------------------- -->
         <div class="card item html">
           <div class="card-thumb">
             <a href="#"><img
@@ -284,11 +289,6 @@
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla atque
               consectetur, adipisicing elit.
             </p>
-          </div>
-          <div class="card-footer">
-            <div class="card-time">
-              <i class="material-icons">alarm</i><span>30 min</span>
-            </div>
           </div>
         </div>
         <!--  -->
@@ -434,7 +434,7 @@
     });
   </script>
   <script>
-    alert("Site em desenvolvimento!");
+   // alert("Site em desenvolvimento!");
   </script>
 </body>
 
