@@ -489,7 +489,7 @@ img {
 }
 
 .btn {
-  color: #ffffff;
+  color: #000;
   padding: 0.8rem;
   font-size: 14px;
   text-transform: uppercase;
@@ -498,12 +498,12 @@ img {
   display: block;
   width: 100%;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background: transparent;
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(70, 70, 70, 0.12);
 }
 
 .cards_servico {
@@ -529,14 +529,14 @@ img {
 @media (min-width: 896px) {
   .cards_item_servico {
     width: 30%;
-
   }
 }
 
 .card_servico {
+  height: 420px;
   background-color: white;
   border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 3px 5px #ccc;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -544,11 +544,11 @@ img {
 
 .card_conteudo {
   padding: 1rem;
-  background: rgba(68, 88, 220, 0.8);
+  background: white;
 }
 
 .card_titulo {
-  color: #ffffff;
+  color: black;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -557,7 +557,7 @@ img {
 }
 
 .card_texto {
-  color: #ffffff;
+  color: var(--segunda-cor);
   font-size: 0.875rem;
   padding-top: 10px;
   line-height: 1.5;
