@@ -531,9 +531,11 @@ img {
     width: 30%;
   }
 }
-
+.card_image{
+  height: 55%;
+}
 .card_servico {
-  height: 420px;
+  height: 390px;
   background-color: white;
   border-radius: 0.25rem;
   box-shadow: 3px 3px 5px #ccc;
