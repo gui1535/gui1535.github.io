@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guilherme Araujo · Full Stack</title>
+  <meta name="description" content="Guilherme Araujo, desenvolvedor full stack. Laravel, React, React Native, APIs, Linux e Docker. Criador do Comandu." />
+  <meta name="theme-color" content="#1B2233" />
+  <meta property="og:title" content="Guilherme Araujo · Full Stack" />
+  <meta property="og:description" content="Desenvolvedor full stack. Laravel, React, APIs, cloud e o Comandu na Google Play." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233568d4'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial,sans-serif' font-size='16' font-weight='700' fill='%23fff'%3EG%3C/text%3E%3C/svg%3E" />
+  <link rel="preload" href="assets/fonts/rubik-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="como-fica.css" />
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Principal projeto</a>
+      <a href="#competencias">Competências</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <div class="container nav">
+      <a class="brand" href="#top">Guilherme Araujo</a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Principal projeto</a></li>
+        <li><a href="#competencias">Competências</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="nav-cta">
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <main id="top">
+    <section class="section">
+      <div class="container">
+        <p style="color:var(--muted);padding:80px 0">Estrutura inicial do portfolio.</p>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script>
+    if (window.lucide) lucide.createIcons();
+
+    const header = document.getElementById("header");
+    const toggle = document.getElementById("navToggle");
+    const menu = document.getElementById("mobileMenu");
+
+    const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    toggle?.addEventListener("click", () => {
+      const open = menu.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    menu?.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => {
+      menu.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    }));
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("in"); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
