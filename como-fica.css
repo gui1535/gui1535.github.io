@@ -416,6 +416,41 @@ code { font-family: var(--mono); }
   line-height: 1.45;
 }
 
+/* ---------- Terminal ---------- */
+.term-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--surface);
+}
+.term-bar i { width: 10px; height: 10px; border-radius: 50%; display: block; }
+.term-bar .r { background: var(--error); }
+.term-bar .y { background: #f5b942; }
+.term-bar .g { background: var(--success); }
+.term-bar span { margin-left: 8px; color: var(--muted-2); font-size: 12px; font-weight: 500; }
+.term-body {
+  font-family: var(--mono);
+  line-height: 1.65;
+}
+.term-line { white-space: pre-wrap; word-break: break-word; color: var(--muted); }
+.term-line .p { color: var(--success); }
+.term-line .c { color: #e8edf5; }
+.term-line .warn { color: var(--coin); }
+.term-line .ok { color: var(--success); }
+
+.cursor-blink {
+  display: inline-block;
+  width: 8px;
+  height: 1.05em;
+  background: var(--blue-soft);
+  vertical-align: text-bottom;
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
 
 @media (max-width: 960px) {
   .section { padding: 64px 0; }
