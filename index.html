@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Guilherme Araujo · Full Stack</title>
-  <meta name="description" content="Guilherme Araujo, desenvolvedor full stack. Laravel, React, React Native, APIs, Linux e Docker. Criador do Comandu." />
+  <meta name="description" content="Guilherme Araujo, desenvolvedor full stack. Laravel, React, React Native, APIs, Linux e Docker. Criador do Comandu e do SQL to Eloquent." />
   <meta name="theme-color" content="#1B2233" />
   <meta property="og:title" content="Guilherme Araujo · Full Stack" />
-  <meta property="og:description" content="Desenvolvedor full stack. Laravel, React, APIs, cloud e o Comandu na Google Play." />
+  <meta property="og:description" content="Desenvolvedor full stack. Laravel, React, APIs, cloud, o Comandu na Google Play e o pacote SQL to Eloquent." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233568d4'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial,sans-serif' font-size='16' font-weight='700' fill='%23fff'%3EG%3C/text%3E%3C/svg%3E" />
@@ -18,7 +18,7 @@
   <header class="site-header" id="header">
     <div class="mobile-menu" id="mobileMenu">
       <a href="#sobre">Sobre</a>
-      <a href="#projetos">Principal projeto</a>
+      <a href="#projetos">Projetos</a>
       <a href="#competencias">Competências</a>
       <a href="#experiencia">Experiência</a>
       <a href="#contato">Contato</a>
@@ -27,7 +27,7 @@
       <a class="brand" href="#top">Guilherme Araujo</a>
       <ul class="nav-links">
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Principal projeto</a></li>
+        <li><a href="#projetos">Projetos</a></li>
         <li><a href="#competencias">Competências</a></li>
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -51,8 +51,9 @@
             e React Native no mobile, além de Linux e Docker na operação e no deploy.
           </p>
           <p class="home-lead home-lead-2">
-            Em paralelo, desenvolvi sozinho o <strong>Comandu</strong>, um app para
-            aprender Linux e Git que está publicado na Google Play.
+            Em paralelo, desenvolvi o <strong>Comandu</strong>, app na Google Play
+            para aprender Linux e Git, e o <strong>SQL to Eloquent</strong>, pacote Laravel
+            que gera código a partir de schemas SQL.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contato">
@@ -92,11 +93,12 @@
             <div class="term-body">
               <div class="term-line"><span class="p">$</span> <span class="c">cat profile.md</span></div>
               <div class="term-line">role: full stack developer</div>
-              <div class="term-line">focus: apps · apis · cloud</div>
+              <div class="term-line">focus: apps · apis · packages</div>
               <div class="term-line">product: <span class="warn">comandu</span> @ play store</div>
+              <div class="term-line">package: <span class="warn">sql-to-eloquent</span></div>
               <div class="term-line">stack: laravel · react native · firebase</div>
-              <div class="term-line"><span class="p">$</span> <span class="c">open ./comandu</span></div>
-              <div class="term-line"><span class="ok">live on play store</span></div>
+              <div class="term-line"><span class="p">$</span> <span class="c">composer require gui1535/sql-to-eloquent</span></div>
+              <div class="term-line"><span class="ok">published on packagist</span></div>
               <div class="term-line"><span class="p">$</span> <span class="cursor-blink"></span></div>
             </div>
           </div>
@@ -120,7 +122,8 @@
           <p>
             Comecei na empresa em 2022 como estagiário de desenvolvimento web,
             com base em PHP e Laravel. Em paralelo, desenvolvi o Comandu do início
-            ao fim como projeto pessoal.
+            ao fim e publiquei o SQL to Eloquent, biblioteca open source para
+            gerar artefatos Laravel a partir de dumps SQL.
           </p>
           <p>
             Na Trivia Trens, em tempo integral, faço manutenção preventiva e corretiva
@@ -178,44 +181,87 @@
 
     <section class="section section-alt" id="projetos">
       <div class="container">
-        <div class="project-block reveal">
-          <div class="project-copy">
-            <span class="eyebrow">Principal projeto</span>
-            <h2>Comandu: aprenda Linux e Git</h2>
-            <p>
-              App para aprender Linux e Git com trilhas, desafios e um terminal
-              simulado. Desenvolvi o projeto do início ao fim, incluindo backend,
-              cloud, monetização e o site.
-            </p>
-            <p class="project-meta">React Native · Expo · Firebase · TypeScript</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="https://comandu.com.br" target="_blank" rel="noopener">
-                <span class="btn-shadow"></span>
-                <span class="btn-face"><i data-lucide="globe" aria-hidden="true"></i> Visitar o site</span>
-              </a>
-              <a class="btn-ghost" href="https://play.google.com/store/apps/details?id=br.com.comandu.app" target="_blank" rel="noopener">
-                <i data-lucide="smartphone" aria-hidden="true"></i>
-                Google Play
-              </a>
+        <div class="section-head projects-head reveal">
+          <h2>Meus projetos</h2>
+        </div>
+
+        <div class="projects">
+          <div class="project-block reveal">
+            <div class="project-copy">
+              <span class="eyebrow">App · Google Play</span>
+              <h3>Comandu: aprenda Linux e Git</h3>
+              <p>
+                App para aprender Linux e Git com trilhas, desafios e um terminal
+                simulado. Desenvolvi o projeto do início ao fim, incluindo backend,
+                cloud, monetização e o site.
+              </p>
+              <p class="project-meta">React Native · Expo · Firebase · TypeScript</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="https://comandu.com.br" target="_blank" rel="noopener">
+                  <span class="btn-shadow"></span>
+                  <span class="btn-face"><i data-lucide="globe" aria-hidden="true"></i> Visitar o site</span>
+                </a>
+                <a class="btn-ghost" href="https://play.google.com/store/apps/details?id=br.com.comandu.app" target="_blank" rel="noopener">
+                  <i data-lucide="smartphone" aria-hidden="true"></i>
+                  Google Play
+                </a>
+              </div>
+            </div>
+            <div class="project-shots" aria-hidden="true">
+              <div class="device" style="--w:168px">
+                <div class="device-frame">
+                  <div class="device-island"></div>
+                  <div class="device-screen">
+                    <img src="telas/trilha.png" alt="" width="600" height="1318" />
+                  </div>
+                </div>
+              </div>
+              <div class="device" style="--w:168px">
+                <div class="device-frame">
+                  <div class="device-island"></div>
+                  <div class="device-screen">
+                    <img src="telas/terminal.png" alt="" width="600" height="1318" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="project-shots" aria-hidden="true">
-            <div class="device" style="--w:168px">
-              <div class="device-frame">
-                <div class="device-island"></div>
-                <div class="device-screen">
-                  <img src="telas/trilha.png" alt="" width="600" height="1318" />
-                </div>
+
+          <div class="project-block project-block--lib reveal">
+            <div class="project-copy">
+              <span class="eyebrow">Biblioteca · Packagist</span>
+              <h3>SQL to Eloquent</h3>
+              <p>
+                Pacote Laravel que interpreta dumps MySQL/MariaDB e gera migrations,
+                models Eloquent, controllers CRUD e seeders. Parser próprio, CLI
+                Artisan interativa, dry-run e proteção contra sobrescrita.
+              </p>
+              <p class="project-meta">PHP 8.2+ · Laravel 11/12 · Composer · PHPUnit</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="https://github.com/gui1535/sql-to-eloquent" target="_blank" rel="noopener">
+                  <span class="btn-shadow"></span>
+                  <span class="btn-face"><i data-lucide="github" aria-hidden="true"></i> Ver no GitHub</span>
+                </a>
+                <a class="btn-ghost" href="https://packagist.org/packages/gui1535/sql-to-eloquent" target="_blank" rel="noopener">
+                  <i data-lucide="package" aria-hidden="true"></i>
+                  Packagist
+                </a>
               </div>
             </div>
-            <div class="device" style="--w:168px">
-              <div class="device-frame">
-                <div class="device-island"></div>
-                <div class="device-screen">
-                  <img src="telas/terminal.png" alt="" width="600" height="1318" />
-                </div>
+            <aside class="project-term home-term" aria-hidden="true">
+              <div class="term-bar"><i class="r"></i><i class="y"></i><i class="g"></i><span>sql-to-eloquent</span></div>
+              <div class="term-body">
+                <div class="term-line"><span class="p">$</span> <span class="c">php artisan sql:gerar schema.sql</span></div>
+                <div class="term-line">SQL to Eloquent</div>
+                <div class="term-line">Arquivo: <span class="warn">schema.sql</span></div>
+                <div class="term-line">Tabelas: 12 · FKs: 8 · Inserts: 34</div>
+                <div class="term-line"><span class="ok">✓</span> migrations</div>
+                <div class="term-line"><span class="ok">✓</span> models + relacionamentos</div>
+                <div class="term-line"><span class="ok">✓</span> controllers CRUD</div>
+                <div class="term-line"><span class="ok">✓</span> seeders</div>
+                <div class="term-line"><span class="p">$</span> <span class="cursor-blink"></span></div>
               </div>
-            </div>
+            </aside>
           </div>
         </div>
       </div>
@@ -226,7 +272,7 @@
         <div class="section-head reveal">
           <span class="eyebrow">Competências</span>
           <h2>Tecnologias que utilizo</h2>
-          <p>Stack que já usei no trabalho e no desenvolvimento do Comandu.</p>
+          <p>Stack que já usei no trabalho, no Comandu e no SQL to Eloquent.</p>
         </div>
 
         <div class="skills-grid reveal">
@@ -235,8 +281,8 @@
             <ul>
               <li>PHP, JavaScript e TypeScript</li>
               <li>Laravel, React, React Native e Expo</li>
+              <li>Pacotes Composer e CLI Artisan</li>
               <li>APIs REST e integrações</li>
-              <li>Regras de negócio e interface</li>
             </ul>
           </article>
           <article>
@@ -364,7 +410,7 @@
           <h2>Vamos conversar</h2>
           <p>
             Aberto a oportunidades em desenvolvimento full stack e a conversas
-            sobre o Comandu.
+            sobre o Comandu ou o SQL to Eloquent.
           </p>
         </div>
         <ul class="contato reveal">

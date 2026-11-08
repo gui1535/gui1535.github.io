@@ -567,7 +567,22 @@ code { font-family: var(--mono); }
   background: #fff;
 }
 
-/* ---------- Projeto destaque ---------- */
+/* ---------- Projetos ---------- */
+.projects-head {
+  margin-bottom: 48px;
+}
+.projects-head h2 {
+  font-size: clamp(22px, 2.8vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-2);
+  margin: 0;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
 .project-block {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -576,7 +591,7 @@ code { font-family: var(--mono); }
 }
 .project-copy { min-width: 0; }
 .project-copy .eyebrow { margin-bottom: 14px; }
-.project-copy h2 {
+.project-copy h3 {
   font-size: clamp(30px, 4.2vw, 46px);
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -600,6 +615,13 @@ code { font-family: var(--mono); }
   display: flex;
   gap: 18px;
   align-items: flex-end;
+}
+.project-term {
+  width: min(100%, 380px);
+  justify-self: end;
+}
+.project-block--lib {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
 }
 .device { width: var(--w); filter: drop-shadow(0 30px 44px rgba(0, 0, 0, 0.55)); }
 .device-frame {
@@ -725,6 +747,7 @@ code { font-family: var(--mono); }
   .home-hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .formacao,
   .project-block,
+  .project-block--lib,
   .skills-grid,
   .about-grid {
     grid-template-columns: 1fr;
@@ -733,6 +756,11 @@ code { font-family: var(--mono); }
     justify-content: center;
     margin-top: 8px;
   }
+  .project-term {
+    width: 100%;
+    justify-self: stretch;
+  }
+  .projects { gap: 56px; }
 }
 
 @media (max-width: 720px) {
